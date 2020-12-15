@@ -6,8 +6,11 @@ var tbody = d3.select("tbody");
 // Console.log the weather data from data.js
 console.log(tableData);
 
-// Step 1: Loop Through `data` and console.log each ufo data object
-data.forEach(function(ufoData) {
-  console.log(ufoData);
+tableData.forEach(function(ufoData) {
+     var row = tbody.append("tr")
+    Object.entries(ufoData).forEach(function([key,value]) {
+        console.log(key, value);
+        var cell = row.append("td");
+        cell.text(value)
 });
-
+});
