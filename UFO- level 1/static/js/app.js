@@ -28,4 +28,6 @@ form.on("submit", filterData);
 function filterData(){
     // Prevent the page from refreshing
   d3.event.preventDefault();
+//   removing the exsisting rows
+  d3.selectAll("td").remove();
 }
