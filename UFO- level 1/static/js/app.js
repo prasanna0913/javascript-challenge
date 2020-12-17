@@ -25,4 +25,24 @@ tableData.forEach(function(ufoData) {
 });
 });
 
+function updateTable(){
+    d3.selectAll("td").remove();
+
+    var userInput = d3.select("#datetime");
+    var userData= userInput.property("value");
+   
+tableData.forEach(function(ufoData) {
+        var filteredData =   tableData.filter(ufoData => ufoData.datetime === userData);
+        console.log(filteredData);
+        filteredData.forEach(function(ufoData) {
+        var row = tbody.append("tr")
+        Object.entries(ufoData).forEach(function([key,value]) {
+            console.log(key, value);
+            var cell = row.append("td");
+            cell.text(value)
+    });
+});
+
+});  
+}
 
