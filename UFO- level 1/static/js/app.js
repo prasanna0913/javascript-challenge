@@ -30,4 +30,10 @@ function filterData(){
   d3.event.preventDefault();
 //   removing the exsisting rows
   d3.selectAll("td").remove();
+  
+    var userInput = d3.select("#datetime");
+    var userData= userInput.property("value");
+    console.log(userData)
+    
+
 }
