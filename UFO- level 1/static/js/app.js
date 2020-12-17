@@ -34,6 +34,20 @@ function filterData(){
     var userInput = d3.select("#datetime");
     var userData= userInput.property("value");
     console.log(userData)
+
+    tableData.forEach(function(ufoData) {
+        var filteredData =   tableData.filter(ufoData => ufoData.datetime === userData);
+        console.log(filteredData);
+        
+        filteredData.forEach(function(ufoData) {
+            var row = tbody.append("tr")
+            Object.entries(ufoData).forEach(function([key,value]) {
+                console.log(key, value);
+                var cell = row.append("td");
+                cell.text(value)
+        });
+    });
+});  
     
 
 }
