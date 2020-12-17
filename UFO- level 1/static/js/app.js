@@ -24,3 +24,8 @@ var form = d3.select("#form")
 // Create event handlers 
 button.on("click", filterData);
 form.on("submit", filterData);
+
+function filterData(){
+    // Prevent the page from refreshing
+  d3.event.preventDefault();
+}
