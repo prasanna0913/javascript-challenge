@@ -31,14 +31,36 @@ function filterData(){
 //   removing the exsisting rows
   d3.selectAll("td").remove();
   
-    var userInput = d3.select("#datetime");
-    var userData= userInput.property("value");
-    console.log(userData)
+    var datetimeField = d3.select("#datetime");
+    var cityField = d3.select("#city");
+    var stateField = d3.select("#state");
+    var countryField = d3.select("#country");
+    var shapeField = d3.select("#shape");
+    
 
-    tableData.forEach(function(ufoData) {
-        var filteredData =   tableData.filter(ufoData => ufoData.datetime === userData);
-        console.log(filteredData);
+
+    var userEnteredDate= datetimeField.property("value");
+    var userEnteredCity= cityField.property("value");
+    var userEnteredState= stateField.property("value");
+    var userEnteredCountry= countryField.property("value");
+    var userEnteredShape= shapeField.property("value");
+
+    console.log(userEnteredDate);
+
+        var filteredData = tableData;
+        if (userEnteredDate) { 
+          filteredData = filteredData.filter(ufoData => (ufoData.datetime === userEnteredDate));
+        }
         
+        if (userEnteredCity) { 
+          filteredData = filteredData.filter(ufoData => (ufoData.city === userEnteredCity));
+        }
+
+        
+
+        
+        console.log(filteredData);
+
         filteredData.forEach(function(ufoData) {
             var row = tbody.append("tr")
             Object.entries(ufoData).forEach(function([key,value]) {
@@ -47,7 +69,6 @@ function filterData(){
                 cell.text(value)
         });
     });
-});  
     
 
 }
