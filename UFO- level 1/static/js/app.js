@@ -55,10 +55,17 @@ function filterData(){
         if (userEnteredCity) { 
           filteredData = filteredData.filter(ufoData => (ufoData.city === userEnteredCity));
         }
+        if (userEnteredState) { 
+          filteredData = filteredData.filter(ufoData => (ufoData.state === userEnteredState));
+        }
+        if (userEnteredCountry) { 
+          filteredData = filteredData.filter(ufoData => (ufoData.country === userEnteredCountry));
+        }
+        if (userEnteredShape) { 
+          filteredData = filteredData.filter(ufoData => (ufoData.shape === userEnteredShape));
+        }
 
-        
-
-        
+              
         console.log(filteredData);
 
         filteredData.forEach(function(ufoData) {
