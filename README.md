@@ -32,8 +32,8 @@
 * For advanced filters enter `STATE, CITY, COUNTRY, SHAPE` as input field, once the second filtered is applied, data from Step 1 is considered to filter further data.
 * Same follows for all the input filters.(the order in which user enters)
 is considered to filter and further filtered data is based on previous filtered data content.
-## Show examples of usage:
 
+## Show examples of usage:
 * Filter `Date` with '1/4/2010' [data table displays with 6 rows].
 * Then Add filter `Shape` with 'light' value [data will be filtered based on user inputs and 4 rows will be displayed]
 * Then filter the data based on `State` with 'ca' value [This would result in filtering the data and displays two rows.]
