@@ -40,14 +40,12 @@ is considered to filter and further filtered data is based on previous filtered 
 *Finally filter the data using 'City' with 'whittier' [his would result in filtering the data and displays one row which matches all the user inputs]
 
 ![date filtered table](./screenshots/date.png)
-![date and shape filtered table](./screenshots/date_and_shape_filter.png)
-
-![city filtered table](./screenshots/city_filter.png)
-
+![date and shape filtered table](./screenshots/date_shape_filter.png)
+![date, state, shape filtered table](./screenshots/date_state_shape_filter.png)
+![date, city, state, shape  filtered table](./screenshots/date_city_state_shape_filter.png)
 
 # Status
 Project is finished
-
 
 # Contact
 ## D. Sai Prasanna
