@@ -41,8 +41,8 @@ is considered to filter and further filtered data is based on previous filtered 
 
 ![date filtered table](./screenshots/date.png)
 ![date and shape filtered table](./screenshots/date_shape_filter.png)
-![date, state, shape filtered table](./screenshots/date_state_shape_filter.png)
-![date, city, state, shape  filtered table](./screenshots/date_city_state_shape_filter.png)
+![date,state,shape filtered table](./screenshots/date_state_shape_filter.png)
+![date,city,state,shape filtered table](./screenshots/date_city_state_shape_filter.png)
 
 # Status
 Project is finished
